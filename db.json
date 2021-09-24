@@ -1,0 +1,105 @@
+{
+  "course": [
+    {
+      "id_course": "1",
+      "course_name": "Belajar Shopee Online",
+      "trainer": {
+        "trainer_id": "1",
+        "profession": "Trainer Tiktok",
+        "trainer_name": "Lourdes Leon"
+      }
+    },
+    {
+      "id_course": "2",
+      "course_name": "Kelas Tiktok Maju Jaya",
+      "trainer": {
+        "trainer_id": "2",
+        "profession": "Trainer Tiktok",
+        "trainer_name": "Andara Robby"
+      }
+    },
+    {
+      "id_course": "3",
+      "course_name": "Kelas Jago Instagram",
+      "trainer": {
+        "trainer_id": "3",
+        "profession": "Trainer Instagram",
+        "trainer_name": "Michael Lim"
+      }
+    }
+  ],
+  "detail_course": [
+    {
+      "id": "1",
+      "course_id": "1",
+      "bab": [
+        {
+          "id_bab": "1",
+          "nama_bab": "Bab 1",
+          "bagian": "pendahuluan",
+          "materi": [
+            {
+              "id_materi": "1",
+              "embed": ""
+            },
+            {
+              "id_materi": "2",
+              "embed": ""
+            }
+          ]
+        },
+        {
+          "id_bab": "2",
+          "nama_bab": "Bab 2",
+          "bagian": "Intisari",
+          "materi": [
+            {
+              "id_materi": "3",
+              "embed": ""
+            },
+            {
+              "id_materi": "4",
+              "embed": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "course_id": "2",
+      "bab": [
+        {
+          "id_bab": "3",
+          "nama_bab": "Bab 1",
+          "bagian": "pendahuluan programming",
+          "materi": [
+            {
+              "id_materi": "5",
+              "embed": ""
+            },
+            {
+              "id_materi": "6",
+              "embed": ""
+            }
+          ]
+        },
+        {
+          "id_bab": "4",
+          "nama_bab": "Bab 2",
+          "bagian": "Batasan Masalah",
+          "materi": [
+            {
+              "id_materi": "7",
+              "embed": ""
+            },
+            {
+              "id_materi": "8",
+              "embed": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

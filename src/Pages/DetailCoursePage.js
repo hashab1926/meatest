@@ -1,7 +1,7 @@
-const DetailCourse = () => {
+const DetailCoursePage = () => {
     return (
-        <h1>DetailCourse Page</h1>
+        <h1>DetailCoursePage Page</h1>
     );
 }
 
-export default DetailCourse;
+export default DetailCoursePage;

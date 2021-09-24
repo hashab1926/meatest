@@ -1,5 +1,5 @@
 const config = {
-    endpoint: 'https://staging.komunitasmea.com/api'
+    endpoint: 'http://localhost:3000'
 };
 
 module.exports = config;

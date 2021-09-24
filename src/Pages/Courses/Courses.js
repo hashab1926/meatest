@@ -1,15 +1,15 @@
 // built-in
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 // internal
 import './Courses.css';
 import { endpoint } from '../../Config';
-import dataCourses from './DataCourse';
 
 // external
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 
+// navigasi halmaan course
 const Nav = () => {
     return (
         <nav class="nav-courses">
@@ -25,6 +25,7 @@ const Nav = () => {
         </nav>
     );
 }
+
 
 const CardCourse = (props) => {
     const coverImg = props.coverImg ?? "https://hughculver.com/wp2/wp-content/uploads/11-main3-880x494.jpg";
@@ -54,21 +55,35 @@ const CardCourse = (props) => {
     );
 }
 
-const LoadUICourse = () => {
-    return dataCourses.map(course => {
-        // console.log(course);
-        return <CardCourse title={course.course_name} trainer={course.trainer.trainer_name} profession={course.trainer.profession} courseId={course.course_id} />
-    })
-}
 
 const Courses = () => {
+    // tampung data course
+    const [dataCourses, setDataCourses] = useState([]);
+
+    useEffect(() => {
+        getDataCourses();
+    }, [dataCourses])
+
+
+    // get request 
+    const getDataCourses = () => {
+        axios.get(`${endpoint}/course`).then(function ({ data }) {
+            setDataCourses(data)
+        })
+    }
+
+    // untuk tampilan ui ketika api telah terload
+    const UICourse = (courses) => {
+        return courses.map(course => <CardCourse title={course.course_name} trainer={course.trainer.trainer_name} profession={course.trainer.profession} courseId={course.id_course} />)
+    }
+
     return (
         <div style={{
             background: '#9ca7a7', height: '100vh', paddingBottom: '50px'
         }}>
             <Nav />
             <div className="wrapper-course">
-                <LoadUICourse />
+                {dataCourses.length <= 0 ? '' : UICourse(dataCourses)}
             </div>
         </div >
     );
