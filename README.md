@@ -10,7 +10,7 @@ yang mana untuk mengakses course dan detail course diperlukan token
 
 ### Tambahan
 
-1.dan untuk halaman course dan detail course, saya membuat file .json sebagai ganti nya, dengan
+1.dan untuk halaman course dan detail course, saya membuat database menggunakan _json-server_ sebagai ganti nya, dan untuk memulai
 mengetikan perintah :
 
 ### npm run start_db
