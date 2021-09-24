@@ -7,6 +7,7 @@ import { endpoint } from '../../Config';
 
 // external
 import axios from 'axios';
+import { useHistory } from 'react-router-dom';
 
 const img = { backgroundImage: `url(${process.env.PUBLIC_URL}/img/image-001.png)` };
 
@@ -37,6 +38,9 @@ const ColumnRight = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    // history
+    const history = useHistory();
+
     // toggle password
     const showPassword = (evt) => {
         setTogglePassword(!togglePassword);
@@ -45,13 +49,21 @@ const ColumnRight = () => {
     // jika di klik 'masuk'
     const submitLogin = async (evt) => {
         try {
-
             evt.preventDefault();
+
             const data = { email, password };
             const response = await axios.post(`${endpoint}/login`, data);
-            console.log(response);
+            console.log(response.data.status)
+            // cek response
+            if (response.data.status != 200) {
+                throw response.data.message;
+            }
+
         } catch (error) {
-            console.log(error)
+            alert(error);
+
+
+            history.push('/courses');
         }
     }
     // ui form login

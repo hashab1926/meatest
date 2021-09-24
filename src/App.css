@@ -73,6 +73,9 @@ body {
   width: 100%;
 }
 
+.rounded-circle {
+  border-radius: 50%;
+}
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 }

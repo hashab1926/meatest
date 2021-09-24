@@ -1,6 +1,8 @@
+import Course from '../Components/Courses/Courses';
+
 const CoursesPage = () => {
     return (
-        <h1>Courses s Page</h1>
+        <Course />
     );
 }
 

@@ -1,0 +1,22 @@
+.nav-courses {
+  background: #2c343c;
+  height: 120px;
+  display: grid;
+  align-items: center;
+}
+.nav-courses ul {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  margin: 0;
+  color: white;
+}
+
+.profile {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}

@@ -9,8 +9,10 @@ import CoursesPage from './Pages/CoursesPage';
 function App() {
   return (
     <Router>
-      <Route path="/" component={LoginPage} />
-      <Route path="/courses" component={CoursesPage} />
+      <Switch>
+        <Route exact path="/" component={LoginPage} />
+        <Route path="/courses" component={CoursesPage} />
+      </Switch>
 
     </Router>
   );
