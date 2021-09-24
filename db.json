@@ -40,11 +40,13 @@
           "materi": [
             {
               "id_materi": "1",
-              "embed": ""
+              "embed": "https://www.youtube.com/embed/y_pr4lRoUto",
+              "nama_materi": "materi 001"
             },
             {
               "id_materi": "2",
-              "embed": ""
+              "embed": "https://www.youtube.com/embed/0ZJgIjIuY7U",
+              "nama_materi": "materi 002"
             }
           ]
         },
@@ -55,11 +57,13 @@
           "materi": [
             {
               "id_materi": "3",
-              "embed": ""
+              "embed": "https://www.youtube.com/watch?v=HktWin_LPf4",
+              "nama_materi": "materi 003"
             },
             {
               "id_materi": "4",
-              "embed": ""
+              "embed": "https://www.youtube.com/embed/CMB6AlE1QuI",
+              "nama_materi": "materi 004"
             }
           ]
         }
@@ -76,11 +80,13 @@
           "materi": [
             {
               "id_materi": "5",
-              "embed": ""
+              "embed": "https://www.youtube.com/embed/D7YMSt2ntWY",
+              "nama_materi": "materi 001"
             },
             {
               "id_materi": "6",
-              "embed": ""
+              "embed": "https://www.youtube.com/embed/jf3GdvAFHsE",
+              "nama_materi": "materi 002"
             }
           ]
         },
@@ -91,11 +97,13 @@
           "materi": [
             {
               "id_materi": "7",
-              "embed": ""
+              "embed": "https://www.youtube.com/embed/F0G9lZ7gecE",
+              "nama_materi": "materi 003"
             },
             {
               "id_materi": "8",
-              "embed": ""
+              "embed": "https://www.youtube.com/embed/cbB3QEwWMlA",
+              "nama_materi": "materi 004"
             }
           ]
         }
