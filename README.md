@@ -17,4 +17,4 @@ mengetikan perintah :
 
 dan port pada perintah tersebut _3000_
 
-3.ketika mengetikan perintah _npm start_, maka port pada localhost menjadi 3001.
+2.ketika mengetikan perintah _npm start_, maka port pada localhost menjadi 3001.
