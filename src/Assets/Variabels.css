@@ -1,0 +1,25 @@
+:root {
+  --Margin1: 0.313rem;
+  --Margin2: 0.625rem;
+  --Margin3: 0.938rem;
+  --Margin4: 1.25rem;
+  --Margin5: 1.563rem;
+  --Margin6: 1.875rem;
+  --Margin7: 2.188rem;
+  --Margin8: 2.5rem;
+  --Margin9: 2.813rem;
+  --Margin10: 3.125rem;
+
+  --Padding1: 0.313rem;
+  --Padding2: 0.625rem;
+  --Padding3: 0.938rem;
+  --Padding4: 1.25rem;
+  --Padding5: 1.563rem;
+  --Padding6: 1.875rem;
+  --Padding7: 2.188rem;
+  --Padding8: 2.5rem;
+  --Padding9: 2.813rem;
+  --Padding10: 3.125rem;
+
+  --orange: #e98534;
+}

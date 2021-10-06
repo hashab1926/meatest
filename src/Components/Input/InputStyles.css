@@ -1,0 +1,13 @@
+@import "../../Assets/Variabels.css";
+
+.form-input {
+  height: 40px;
+  margin: var(--Margin2) 0;
+  border: 1px solid #dadada;
+  border-radius: 3.5px;
+  padding: var(--Padding1) var(--Padding4);
+}
+label.label-input {
+  color: #aaa;
+  font-weight: 600;
+}

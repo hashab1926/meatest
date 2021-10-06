@@ -1,0 +1,19 @@
+@import "../../Assets/Variabels.css";
+
+.btn {
+  border: none;
+  padding-top: var(--Padding3);
+  padding-bottom: var(--Padding3);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--orange);
+  color: white;
+}
+
+.btn-block {
+  width: 100%;
+}
