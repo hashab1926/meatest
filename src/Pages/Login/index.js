@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './Login.css';
+import './styles.css';
 import SideLeft from './SideLeft';
 import SideRight from './SideRight';
 

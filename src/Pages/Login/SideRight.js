@@ -1,13 +1,14 @@
 // built-in
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 
 // internal
 import { Navigation, Item } from '../../Components/NavigationLogin/NavigationLogin';
 import Input from '../../Components/Input/Input';
 import Button from '../../Components/Button/Button';
-import EventHandlerLogin from './EventHandlerLogin';
-import { eventBindings } from '../../Config/Events';
-import Validator from '../../Config/Validator';
+import ControllerLogin from './ContollerLogin';
+import { eventBindings } from '../../Helpers/Events';
+import Validator from '../../Helpers/Validator';
 
 // only for lifecycle methods
 class SideRight extends Component {
@@ -21,7 +22,7 @@ class SideRight extends Component {
         // rules form
         this.rules = {
             email: 'required|email',
-            password: 'required|min:8'
+            password: 'required|min:6'
         }
         // configuration validator
         this.validator = Validator({
@@ -69,5 +70,5 @@ class SideRight extends Component {
     }
 }
 
-Object.assign(SideRight.prototype, EventHandlerLogin);
-export default SideRight;
+Object.assign(SideRight.prototype, ControllerLogin);
+export default withRouter(SideRight);

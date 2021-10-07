@@ -1,0 +1,24 @@
+@import "../Assets/Variabels.css";
+
+.nav-courses {
+  background: #2c343c;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+.nav-courses ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  color: white;
+}
+
+.profile {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}

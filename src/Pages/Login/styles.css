@@ -77,6 +77,9 @@ nav.navigation-login ul li:hover {
   flex-direction: column;
   margin-bottom: var(--Margin2);
 }
+.forgot-password {
+  color: var(--orange);
+}
 
 @media (max-width: 768px) {
   .wrapper-login .left {

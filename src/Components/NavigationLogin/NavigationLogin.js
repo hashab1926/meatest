@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ControllerItem from './ControllerItem';
-import EventHandlerItem from './EventHandlerItem';
 
 class Navigation extends Component {
     render() {
@@ -32,7 +31,7 @@ class Item extends Component {
 }
 
 // merge prototype item and controller item
-Object.assign(Item.prototype, ControllerItem, EventHandlerItem);
+Object.assign(Item.prototype, ControllerItem);
 
 export {
     Navigation,

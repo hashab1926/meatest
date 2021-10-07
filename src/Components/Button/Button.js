@@ -2,10 +2,14 @@ import React, { Component } from 'react';
 import './ButtonStyles.css';
 
 class Button extends Component {
+    constructor(props) {
+        super(props);
+        this.onClick = this.props.onClick
+    }
 
     render() {
         return (
-            <button type="submit" className={`btn ${this.props.className}`}>{this.props.text}</button>
+            <button onClick={this.props.onClick} className={`btn ${this.props.className}`}>{this.props.text}</button>
         );
     }
 }

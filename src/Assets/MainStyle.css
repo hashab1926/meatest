@@ -7,12 +7,22 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.4px;
+  overflow-x: hidden;
 }
 
 .text-danger {
   color: rgb(175, 53, 53);
 }
-
+.text-center {
+  text-align: center;
+}
 .text-italic {
   font-style: italic;
+}
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.bg-grey {
+  background: var(--grey);
 }
