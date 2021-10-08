@@ -6,7 +6,7 @@ import { eventBindings } from '../../Helpers/Events';
 import ControllerCourseDetail from "../../Controllers/ControllerCourseDetail";
 import Loading from '../../Template/Loading';
 import Button from '../../Components/Button/Button';
-import './styles.css';
+import './styles.scss';
 
 class CourseDetail extends Component {
     constructor(props) {
@@ -21,23 +21,7 @@ class CourseDetail extends Component {
 
         eventBindings(this, ['prevLesson', 'nextLesson']);
     }
-    getChapters(index) {
-        // short hand course
-        const course = this.state.courseDetail;
-        if (typeof course?.chapters !== 'undefined')
-            return course.chapters[index];
 
-        return [];
-    }
-    getLessons(index) {
-        // get chapters
-        const chapters = this.getChapters(this.state.indexChapters);
-        // check if hapters undefined
-        if (typeof chapters?.lessons !== 'undefined')
-            return chapters.lessons[index];
-
-        return [];
-    }
 
     render() {
         const chapters = this.getChapters(this.state.indexChapters);

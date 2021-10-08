@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import ControllerCourses from '../../Controllers/ControllerCourses';
 import { eventBindings } from '../../Helpers/Events';
 import Button from '../../Components/Button/Button';
-import './styles.css';
+import './styles.scss';
 
 class Courses extends Component {
     constructor(props) {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './InputStyles.css';
+import './InputStyles.scss';
 
 class Input extends Component {
     render() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Routes from './Helpers/Routes';
-import './Assets/MainStyle.css';
+import './Assets/MainStyle.scss';
 
 import reportWebVitals from './reportWebVitals';
 

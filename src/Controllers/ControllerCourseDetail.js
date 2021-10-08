@@ -22,6 +22,25 @@ const ControllerCourseDetail = {
         }
     },
 
+    getChapters(index) {
+        // short hand course
+        const course = this.state.courseDetail;
+        if (typeof course?.chapters !== 'undefined')
+            return course.chapters[index];
+
+        return [];
+    },
+
+    getLessons(index) {
+        // get chapters
+        const chapters = this.getChapters(this.state.indexChapters);
+        // check if hapters undefined
+        if (typeof chapters?.lessons !== 'undefined')
+            return chapters.lessons[index];
+
+        return [];
+    },
+
     mappingIndexCourse(course) {
         const chapters = course.chapters;
         let accomodate = [];
@@ -32,9 +51,6 @@ const ControllerCourseDetail = {
             }
         }
         this.setState({ accomodateIndex: accomodate });
-    },
-
-    prevLesson(course) {
     },
 
     getCurrentIndex() {

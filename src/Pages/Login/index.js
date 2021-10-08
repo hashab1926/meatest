@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './styles.css';
+import './styles.scss';
 import SideLeft from './SideLeft';
 import SideRight from './SideRight';
 
